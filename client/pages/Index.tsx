@@ -307,16 +307,158 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Placeholder sections for other content */}
-      <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            Skills & Expertise
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
-          <p className="text-foreground/60">
-            Skills section will be implemented next...
-          </p>
+      {/* Skills Section */}
+      <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+              Skills & Expertise
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
+            <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
+              A comprehensive toolkit of modern technologies and frameworks
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {/* Frontend Skills */}
+            <div className="glass-morphism p-8 rounded-xl border border-neon-cyan/20 hover-lift">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-neon-cyan/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Globe className="text-neon-cyan" size={32} />
+                </div>
+                <h3 className="text-2xl font-bold text-neon-cyan mb-2">
+                  Frontend
+                </h3>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { skill: "React.js", level: 90 },
+                  { skill: "JavaScript", level: 85 },
+                  { skill: "TypeScript", level: 80 },
+                  { skill: "HTML/CSS", level: 95 },
+                  { skill: "Tailwind CSS", level: 90 },
+                ].map((item, index) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-foreground/80">{item.skill}</span>
+                      <span className="text-neon-cyan">{item.level}%</span>
+                    </div>
+                    <div className="w-full bg-dark-lighter rounded-full h-2 overflow-hidden">
+                      <div
+                        className="h-full bg-gradient-to-r from-neon-cyan to-neon-blue rounded-full transition-all duration-1000 animate-glow"
+                        style={{
+                          width: `${item.level}%`,
+                          animationDelay: `${index * 0.2}s`,
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Backend Skills */}
+            <div className="glass-morphism p-8 rounded-xl border border-neon-purple/20 hover-lift">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-neon-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Database className="text-neon-purple" size={32} />
+                </div>
+                <h3 className="text-2xl font-bold text-neon-purple mb-2">
+                  Backend
+                </h3>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { skill: "Python", level: 95 },
+                  { skill: "Django", level: 85 },
+                  { skill: "FastAPI", level: 80 },
+                  { skill: "SQL Server", level: 75 },
+                  { skill: "REST APIs", level: 90 },
+                ].map((item, index) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-foreground/80">{item.skill}</span>
+                      <span className="text-neon-purple">{item.level}%</span>
+                    </div>
+                    <div className="w-full bg-dark-lighter rounded-full h-2 overflow-hidden">
+                      <div
+                        className="h-full bg-gradient-to-r from-neon-purple to-neon-pink rounded-full transition-all duration-1000 animate-glow"
+                        style={{
+                          width: `${item.level}%`,
+                          animationDelay: `${index * 0.2}s`,
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Tools & Technologies */}
+            <div className="glass-morphism p-8 rounded-xl border border-neon-green/20 hover-lift">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-neon-green/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Zap className="text-neon-green" size={32} />
+                </div>
+                <h3 className="text-2xl font-bold text-neon-green mb-2">
+                  Tools & Tech
+                </h3>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { skill: "Git/GitHub", level: 90 },
+                  { skill: "Docker", level: 70 },
+                  { skill: "AWS", level: 65 },
+                  { skill: "Linux", level: 80 },
+                  { skill: "CI/CD", level: 75 },
+                ].map((item, index) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-foreground/80">{item.skill}</span>
+                      <span className="text-neon-green">{item.level}%</span>
+                    </div>
+                    <div className="w-full bg-dark-lighter rounded-full h-2 overflow-hidden">
+                      <div
+                        className="h-full bg-gradient-to-r from-neon-green to-neon-orange rounded-full transition-all duration-1000 animate-glow"
+                        style={{
+                          width: `${item.level}%`,
+                          animationDelay: `${index * 0.2}s`,
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Technology Stack Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            {[
+              "Python",
+              "React",
+              "Django",
+              "FastAPI",
+              "JavaScript",
+              "TypeScript",
+              "SQL",
+              "Git",
+              "AWS",
+              "Docker",
+              "Linux",
+              "CSS3",
+            ].map((tech, index) => (
+              <div
+                key={index}
+                className="glass-morphism p-4 rounded-lg border border-neon-cyan/10 text-center hover-lift group cursor-pointer"
+              >
+                <div className="text-lg font-medium text-foreground/80 group-hover:text-neon-cyan transition-colors">
+                  {tech}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
