@@ -905,17 +905,257 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            Get In Touch
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
-          <p className="text-foreground/60">
-            Contact section will be implemented next...
-          </p>
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+              Get In Touch
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
+            <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
+              Ready to bring your ideas to life? Let's collaborate on your next
+              project
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div className="glass-morphism p-8 rounded-xl border border-neon-cyan/20">
+                <h3 className="text-2xl font-bold text-neon-cyan mb-6">
+                  Let's Connect
+                </h3>
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-neon-cyan/20 rounded-full flex items-center justify-center">
+                      <Mail className="text-neon-cyan" size={20} />
+                    </div>
+                    <div>
+                      <p className="text-foreground/60 text-sm">Email</p>
+                      <a
+                        href="mailto:lsjeyamurugan@gmail.com"
+                        className="text-foreground hover:text-neon-cyan transition-colors"
+                      >
+                        lsjeyamurugan@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-neon-purple/20 rounded-full flex items-center justify-center">
+                      <span className="text-neon-purple text-sm">📱</span>
+                    </div>
+                    <div>
+                      <p className="text-foreground/60 text-sm">Phone</p>
+                      <a
+                        href="tel:+916374398086"
+                        className="text-foreground hover:text-neon-purple transition-colors"
+                      >
+                        +91 6374398086
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-neon-pink/20 rounded-full flex items-center justify-center">
+                      <Linkedin className="text-neon-pink" size={20} />
+                    </div>
+                    <div>
+                      <p className="text-foreground/60 text-sm">LinkedIn</p>
+                      <a
+                        href="https://linkedin.com/in/jeyamuruganl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground hover:text-neon-pink transition-colors"
+                      >
+                        linkedin.com/in/jeyamuruganl
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-neon-green/20 rounded-full flex items-center justify-center">
+                      <Github className="text-neon-green" size={20} />
+                    </div>
+                    <div>
+                      <p className="text-foreground/60 text-sm">GitHub</p>
+                      <a
+                        href="https://github.com/codewithmejeya"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground hover:text-neon-green transition-colors"
+                      >
+                        github.com/codewithmejeya
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex justify-center space-x-6">
+                <a
+                  href="https://github.com/codewithmejeya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-14 h-14 glass-morphism rounded-full flex items-center justify-center border border-neon-green/20 text-neon-green hover:bg-neon-green hover:text-dark-darker transition-all duration-300 hover-lift"
+                >
+                  <Github size={24} />
+                </a>
+                <a
+                  href="https://linkedin.com/in/jeyamuruganl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-14 h-14 glass-morphism rounded-full flex items-center justify-center border border-neon-blue/20 text-neon-blue hover:bg-neon-blue hover:text-dark-darker transition-all duration-300 hover-lift"
+                >
+                  <Linkedin size={24} />
+                </a>
+                <a
+                  href="mailto:lsjeyamurugan@gmail.com"
+                  className="w-14 h-14 glass-morphism rounded-full flex items-center justify-center border border-neon-cyan/20 text-neon-cyan hover:bg-neon-cyan hover:text-dark-darker transition-all duration-300 hover-lift"
+                >
+                  <Mail size={24} />
+                </a>
+                <a
+                  href="tel:+916374398086"
+                  className="w-14 h-14 glass-morphism rounded-full flex items-center justify-center border border-neon-purple/20 text-neon-purple hover:bg-neon-purple hover:text-dark-darker transition-all duration-300 hover-lift"
+                >
+                  <span className="text-xl">📱</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="glass-morphism p-8 rounded-xl border border-neon-purple/20">
+              <h3 className="text-2xl font-bold text-neon-purple mb-6">
+                Send Message
+              </h3>
+              <form className="space-y-6">
+                <div>
+                  <label className="block text-foreground/80 text-sm mb-2">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full bg-dark-lighter border border-neon-purple/30 rounded-lg px-4 py-3 text-foreground focus:border-neon-purple focus:outline-none transition-colors"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-foreground/80 text-sm mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full bg-dark-lighter border border-neon-purple/30 rounded-lg px-4 py-3 text-foreground focus:border-neon-purple focus:outline-none transition-colors"
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-foreground/80 text-sm mb-2">
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full bg-dark-lighter border border-neon-purple/30 rounded-lg px-4 py-3 text-foreground focus:border-neon-purple focus:outline-none transition-colors"
+                    placeholder="Project collaboration"
+                  />
+                </div>
+                <div>
+                  <label className="block text-foreground/80 text-sm mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    rows={4}
+                    className="w-full bg-dark-lighter border border-neon-purple/30 rounded-lg px-4 py-3 text-foreground focus:border-neon-purple focus:outline-none transition-colors resize-none"
+                    placeholder="Tell me about your project..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-neon-purple text-dark-darker py-3 rounded-lg hover:bg-neon-cyan transition-all duration-300 hover-lift font-medium"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <div className="glass-morphism p-8 rounded-xl border border-neon-cyan/20">
+              <h3 className="text-2xl font-bold gradient-text mb-4">
+                Ready to Build Something Amazing?
+              </h3>
+              <p className="text-foreground/70 mb-6 max-w-2xl mx-auto">
+                Whether you need a full-stack web application, automation
+                solution, or want to discuss innovative ideas, I'm here to help
+                bring your vision to life.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="mailto:lsjeyamurugan@gmail.com"
+                  className="bg-neon-cyan text-dark-darker px-8 py-3 rounded-lg hover:bg-neon-purple transition-all duration-300 hover-lift font-medium"
+                >
+                  Start a Project
+                </a>
+                <a
+                  href="https://linkedin.com/in/jeyamuruganl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glass-morphism px-8 py-3 rounded-lg border border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-dark-darker transition-all duration-300 hover-lift"
+                >
+                  View LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-neon-cyan/20 py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="text-center md:text-left mb-4 md:mb-0">
+              <h3 className="text-xl font-bold gradient-text mb-2">
+                Jeya Murugan L
+              </h3>
+              <p className="text-foreground/60 text-sm">
+                Full Stack Developer & Software Engineer
+              </p>
+            </div>
+            <div className="flex items-center space-x-6">
+              <a
+                href="https://github.com/codewithmejeya"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-neon-cyan transition-colors"
+              >
+                <Github size={20} />
+              </a>
+              <a
+                href="https://linkedin.com/in/jeyamuruganl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-neon-blue transition-colors"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a
+                href="mailto:lsjeyamurugan@gmail.com"
+                className="text-foreground/60 hover:text-neon-purple transition-colors"
+              >
+                <Mail size={20} />
+              </a>
+            </div>
+          </div>
+          <div className="border-t border-neon-cyan/10 mt-6 pt-6 text-center">
+            <p className="text-foreground/50 text-sm">
+              © 2024 Jeya Murugan L. Crafted with passion and cutting-edge
+              technology.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
