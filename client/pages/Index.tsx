@@ -816,7 +816,7 @@ export default function Index() {
             {/* Online Blood Bank Management System */}
             <div className="glass-morphism rounded-xl overflow-hidden border border-neon-purple/20 hover-lift group">
               <div className="relative h-48 bg-gradient-to-br from-neon-purple/20 to-neon-pink/20 flex items-center justify-center">
-                <div className="text-6xl opacity-20">🩸</div>
+                <div className="text-6xl opacity-20">����</div>
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
                   <span className="text-xs bg-neon-purple/20 text-neon-purple px-2 py-1 rounded">
@@ -904,48 +904,6 @@ export default function Index() {
                   >
                     <Github size={16} />
                   </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Web Application */}
-            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-orange/20 hover-lift group">
-              <div className="relative h-48 bg-gradient-to-br from-neon-orange/20 to-neon-cyan/20 flex items-center justify-center">
-                <div className="text-6xl opacity-20">🌐</div>
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-xs bg-neon-orange/20 text-neon-orange px-2 py-1 rounded">
-                    Full-Stack
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-neon-orange mb-2 group-hover:text-glow transition-all">
-                  Social Impact Platform
-                </h3>
-                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
-                  Community platform connecting volunteers with NGOs. Built with
-                  Django backend and modern frontend, featuring real-time
-                  messaging and event management.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
-                    Django
-                  </span>
-                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
-                    JavaScript
-                  </span>
-                  <span className="text-xs bg-neon-green/10 text-neon-green px-2 py-1 rounded">
-                    SQL
-                  </span>
-                </div>
-                <div className="flex space-x-3">
-                  <button className="text-neon-orange hover:text-neon-purple transition-colors">
-                    <Github size={16} />
-                  </button>
-                  <button className="text-neon-orange hover:text-neon-purple transition-colors">
-                    <Globe size={16} />
-                  </button>
                 </div>
               </div>
             </div>
