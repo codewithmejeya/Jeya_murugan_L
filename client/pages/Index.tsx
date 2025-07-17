@@ -308,36 +308,30 @@ export default function Index() {
           <div className="max-w-4xl mx-auto">
             {/* Name */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8">
-              <span className="block text-glow text-neon-cyan">JEYA</span>
-              <span className="block gradient-text">MURUGAN L</span>
+              <span
+                className="block text-glow text-neon-cyan"
+                style={{ margin: "90px 0 0 -4px" }}
+              >
+                JEYA
+              </span>
+              <span
+                className="block gradient-text"
+                style={{ marginLeft: "68px" }}
+              >
+                MURUGAN L
+              </span>
             </h1>
 
             {/* Animated Roles */}
-            <div className="mb-8 space-y-2">
+            <div className="mb-8">
               <AnimatedRole
-                text="Full Stack Developer"
-                color="text-neon-cyan"
-                delay={0}
-              />
-              <AnimatedRole
-                text="Software Engineer"
-                color="text-neon-purple"
-                delay={500}
-              />
-              <AnimatedRole
-                text="Python Developer"
-                color="text-neon-pink"
-                delay={1000}
-              />
-              <AnimatedRole
-                text="Frontend Developer"
-                color="text-neon-green"
-                delay={1500}
-              />
-              <AnimatedRole
-                text="Automation Engineer"
-                color="text-neon-orange"
-                delay={2000}
+                roles={[
+                  { text: "Full Stack Developer", color: "text-neon-cyan" },
+                  { text: "Software Engineer", color: "text-neon-purple" },
+                  { text: "Python Developer", color: "text-neon-pink" },
+                  { text: "Frontend Developer", color: "text-neon-green" },
+                  { text: "Automation Engineer", color: "text-neon-orange" },
+                ]}
               />
             </div>
 
