@@ -859,14 +859,14 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Automation Tool */}
+            {/* Rock Paper Scissors Game */}
             <div className="glass-morphism rounded-xl overflow-hidden border border-neon-green/20 hover-lift group">
               <div className="relative h-48 bg-gradient-to-br from-neon-green/20 to-neon-orange/20 flex items-center justify-center">
-                <div className="text-6xl opacity-20">🤖</div>
+                <div className="text-6xl opacity-20">✂️</div>
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
                   <span className="text-xs bg-neon-green/20 text-neon-green px-2 py-1 rounded">
-                    Automation
+                    Game Development
                   </span>
                 </div>
               </div>
