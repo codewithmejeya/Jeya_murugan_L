@@ -877,12 +877,12 @@ export default function Index() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-neon-green mb-2 group-hover:text-glow transition-all">
-                  Process Automation Suite
+                  Rock Paper Scissors Game
                 </h3>
                 <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
-                  Developed automation tools using Python to streamline
-                  repetitive tasks and improve workflow efficiency. Features
-                  include data processing and report generation.
+                  Interactive web-based implementation of the classic Rock,
+                  Paper, Scissors game featuring player vs computer mode with
+                  clean user interface and engaging gameplay mechanics.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
