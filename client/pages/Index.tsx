@@ -885,23 +885,25 @@ export default function Index() {
                   clean user interface and engaging gameplay mechanics.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
-                    Python
+                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
+                    HTML
                   </span>
                   <span className="text-xs bg-neon-green/10 text-neon-green px-2 py-1 rounded">
-                    Automation
+                    CSS
                   </span>
                   <span className="text-xs bg-neon-orange/10 text-neon-orange px-2 py-1 rounded">
-                    APIs
+                    JavaScript
                   </span>
                 </div>
                 <div className="flex space-x-3">
-                  <button className="text-neon-green hover:text-neon-purple transition-colors">
+                  <a
+                    href="https://github.com/codewithmejeya/RockPaperScissors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-neon-green hover:text-neon-purple transition-colors"
+                  >
                     <Github size={16} />
-                  </button>
-                  <button className="text-neon-green hover:text-neon-purple transition-colors">
-                    <Globe size={16} />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
