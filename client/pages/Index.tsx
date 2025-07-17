@@ -623,15 +623,285 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            Featured Projects
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
-          <p className="text-foreground/60">
-            Projects showcase will be implemented next...
-          </p>
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+              Featured Projects
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
+            <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
+              Showcasing innovative solutions and technical expertise
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* AI E-commerce Platform */}
+            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-cyan/20 hover-lift group">
+              <div className="relative h-48 bg-gradient-to-br from-neon-cyan/20 to-neon-blue/20 flex items-center justify-center">
+                <div className="text-6xl opacity-20">🛍️</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-xs bg-neon-cyan/20 text-neon-cyan px-2 py-1 rounded">
+                    AI-Powered
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-neon-cyan mb-2 group-hover:text-glow transition-all">
+                  AI E-commerce Platform
+                </h3>
+                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
+                  Built a comprehensive e-commerce platform with AI-driven
+                  recommendations using ReactJS and FastAPI. Features include
+                  real-time analytics and intelligent product suggestions.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
+                    React
+                  </span>
+                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
+                    FastAPI
+                  </span>
+                  <span className="text-xs bg-neon-green/10 text-neon-green px-2 py-1 rounded">
+                    AI/ML
+                  </span>
+                </div>
+                <div className="flex space-x-3">
+                  <button className="text-neon-cyan hover:text-neon-purple transition-colors">
+                    <Github size={16} />
+                  </button>
+                  <button className="text-neon-cyan hover:text-neon-purple transition-colors">
+                    <Globe size={16} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Portfolio Website */}
+            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-purple/20 hover-lift group">
+              <div className="relative h-48 bg-gradient-to-br from-neon-purple/20 to-neon-pink/20 flex items-center justify-center">
+                <div className="text-6xl opacity-20">💼</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-xs bg-neon-purple/20 text-neon-purple px-2 py-1 rounded">
+                    3D Design
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-neon-purple mb-2 group-hover:text-glow transition-all">
+                  3D Portfolio Website
+                </h3>
+                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
+                  Interactive portfolio with 3D parallax effects, dark theme,
+                  and neon aesthetics. Built with React and advanced CSS
+                  animations for immersive user experience.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
+                    React
+                  </span>
+                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
+                    Tailwind
+                  </span>
+                  <span className="text-xs bg-neon-pink/10 text-neon-pink px-2 py-1 rounded">
+                    3D CSS
+                  </span>
+                </div>
+                <div className="flex space-x-3">
+                  <button className="text-neon-purple hover:text-neon-cyan transition-colors">
+                    <Github size={16} />
+                  </button>
+                  <button className="text-neon-purple hover:text-neon-cyan transition-colors">
+                    <Globe size={16} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Automation Tool */}
+            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-green/20 hover-lift group">
+              <div className="relative h-48 bg-gradient-to-br from-neon-green/20 to-neon-orange/20 flex items-center justify-center">
+                <div className="text-6xl opacity-20">🤖</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-xs bg-neon-green/20 text-neon-green px-2 py-1 rounded">
+                    Automation
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-neon-green mb-2 group-hover:text-glow transition-all">
+                  Process Automation Suite
+                </h3>
+                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
+                  Developed automation tools using Python to streamline
+                  repetitive tasks and improve workflow efficiency. Features
+                  include data processing and report generation.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
+                    Python
+                  </span>
+                  <span className="text-xs bg-neon-green/10 text-neon-green px-2 py-1 rounded">
+                    Automation
+                  </span>
+                  <span className="text-xs bg-neon-orange/10 text-neon-orange px-2 py-1 rounded">
+                    APIs
+                  </span>
+                </div>
+                <div className="flex space-x-3">
+                  <button className="text-neon-green hover:text-neon-purple transition-colors">
+                    <Github size={16} />
+                  </button>
+                  <button className="text-neon-green hover:text-neon-purple transition-colors">
+                    <Globe size={16} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Web Application */}
+            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-orange/20 hover-lift group">
+              <div className="relative h-48 bg-gradient-to-br from-neon-orange/20 to-neon-cyan/20 flex items-center justify-center">
+                <div className="text-6xl opacity-20">🌐</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-xs bg-neon-orange/20 text-neon-orange px-2 py-1 rounded">
+                    Full-Stack
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-neon-orange mb-2 group-hover:text-glow transition-all">
+                  Social Impact Platform
+                </h3>
+                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
+                  Community platform connecting volunteers with NGOs. Built with
+                  Django backend and modern frontend, featuring real-time
+                  messaging and event management.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
+                    Django
+                  </span>
+                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
+                    JavaScript
+                  </span>
+                  <span className="text-xs bg-neon-green/10 text-neon-green px-2 py-1 rounded">
+                    SQL
+                  </span>
+                </div>
+                <div className="flex space-x-3">
+                  <button className="text-neon-orange hover:text-neon-purple transition-colors">
+                    <Github size={16} />
+                  </button>
+                  <button className="text-neon-orange hover:text-neon-purple transition-colors">
+                    <Globe size={16} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Data Analytics Dashboard */}
+            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-blue/20 hover-lift group">
+              <div className="relative h-48 bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 flex items-center justify-center">
+                <div className="text-6xl opacity-20">📊</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-xs bg-neon-blue/20 text-neon-blue px-2 py-1 rounded">
+                    Analytics
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-neon-blue mb-2 group-hover:text-glow transition-all">
+                  Analytics Dashboard
+                </h3>
+                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
+                  Interactive data visualization dashboard with real-time
+                  analytics. Features dynamic charts, filtering options, and
+                  export capabilities for business intelligence.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
+                    React
+                  </span>
+                  <span className="text-xs bg-neon-blue/10 text-neon-blue px-2 py-1 rounded">
+                    D3.js
+                  </span>
+                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
+                    Python
+                  </span>
+                </div>
+                <div className="flex space-x-3">
+                  <button className="text-neon-blue hover:text-neon-purple transition-colors">
+                    <Github size={16} />
+                  </button>
+                  <button className="text-neon-blue hover:text-neon-purple transition-colors">
+                    <Globe size={16} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Open Source Contribution */}
+            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-pink/20 hover-lift group">
+              <div className="relative h-48 bg-gradient-to-br from-neon-pink/20 to-neon-cyan/20 flex items-center justify-center">
+                <div className="text-6xl opacity-20">🔧</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-xs bg-neon-pink/20 text-neon-pink px-2 py-1 rounded">
+                    Open Source
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-neon-pink mb-2 group-hover:text-glow transition-all">
+                  Development Tools
+                </h3>
+                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
+                  Collection of developer tools and utilities for improved
+                  productivity. Includes code generators, API testing tools, and
+                  development environment setup scripts.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
+                    Python
+                  </span>
+                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
+                    CLI
+                  </span>
+                  <span className="text-xs bg-neon-pink/10 text-neon-pink px-2 py-1 rounded">
+                    Tools
+                  </span>
+                </div>
+                <div className="flex space-x-3">
+                  <button className="text-neon-pink hover:text-neon-purple transition-colors">
+                    <Github size={16} />
+                  </button>
+                  <button className="text-neon-pink hover:text-neon-purple transition-colors">
+                    <Globe size={16} />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <p className="text-lg text-foreground/70 mb-6">
+              Want to see more projects or collaborate?
+            </p>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="glass-morphism px-8 py-3 rounded-lg border border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-dark-darker transition-all duration-300 hover-lift"
+            >
+              Let's Connect
+            </button>
+          </div>
         </div>
       </section>
 
