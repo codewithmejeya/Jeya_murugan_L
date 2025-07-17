@@ -118,8 +118,15 @@ export default function Index() {
               </button>
             </div>
 
-            {/* Desktop Social Links */}
-            <div className="hidden md:flex space-x-4">
+            {/* Desktop Social Links & Resume */}
+            <div className="hidden md:flex items-center space-x-4">
+              <a
+                href="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                download="Jeya_Murugan_L_Resume.pdf"
+                className="glass-morphism px-4 py-2 rounded-lg border border-neon-purple/30 text-neon-purple hover:bg-neon-purple hover:text-dark-darker transition-all duration-300 text-sm font-medium"
+              >
+                Download Resume
+              </a>
               <a
                 href="https://github.com/codewithmejeya"
                 target="_blank"
