@@ -16,31 +16,37 @@ import {
 
 // Animated Role Component
 const AnimatedRole = ({
-  text,
-  color,
-  delay,
+  roles,
 }: {
-  text: string;
-  color: string;
-  delay: number;
+  roles: { text: string; color: string }[];
 }) => {
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, delay);
+    setIsVisible(true);
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+        setIsVisible(true);
+      }, 300);
+    }, 2000);
 
-    return () => clearTimeout(timer);
-  }, [delay]);
+    return () => clearInterval(interval);
+  }, [roles.length]);
+
+  const currentRole = roles[currentRoleIndex];
 
   return (
-    <div
-      className={`text-2xl md:text-3xl lg:text-4xl font-bold transition-all duration-1000 ${
-        isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
-      } ${color} text-glow`}
-    >
-      {text}
+    <div className="h-16 flex items-center justify-center">
+      <div
+        className={`text-2xl md:text-3xl lg:text-4xl font-bold transition-all duration-300 ${
+          isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+        } ${currentRole.color} text-glow`}
+      >
+        {currentRole.text}
+      </div>
     </div>
   );
 };
