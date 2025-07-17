@@ -859,44 +859,53 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Portfolio Website */}
+            {/* Online Blood Bank Management System */}
             <div className="glass-morphism rounded-xl overflow-hidden border border-neon-purple/20 hover-lift group">
               <div className="relative h-48 bg-gradient-to-br from-neon-purple/20 to-neon-pink/20 flex items-center justify-center">
-                <div className="text-6xl opacity-20">💼</div>
+                <div className="text-6xl opacity-20">🩸</div>
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
                   <span className="text-xs bg-neon-purple/20 text-neon-purple px-2 py-1 rounded">
-                    3D Design
+                    Healthcare
                   </span>
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-neon-purple mb-2 group-hover:text-glow transition-all">
-                  3D Portfolio Website
+                  Online Blood Bank Management
                 </h3>
                 <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
-                  Interactive portfolio with 3D parallax effects, dark theme,
-                  and neon aesthetics. Built with React and advanced CSS
-                  animations for immersive user experience.
+                  Comprehensive web-based blood bank and donation management
+                  system with separate admin and user interfaces for efficient
+                  blood donation, request management, and donor-recipient
+                  matching.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
-                    React
+                    HTML/CSS
+                  </span>
+                  <span className="text-xs bg-neon-orange/10 text-neon-orange px-2 py-1 rounded">
+                    JavaScript
                   </span>
                   <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
-                    Tailwind
+                    PHP
                   </span>
                   <span className="text-xs bg-neon-pink/10 text-neon-pink px-2 py-1 rounded">
-                    3D CSS
+                    MySQL
+                  </span>
+                  <span className="text-xs bg-neon-green/10 text-neon-green px-2 py-1 rounded">
+                    Bootstrap
                   </span>
                 </div>
                 <div className="flex space-x-3">
-                  <button className="text-neon-purple hover:text-neon-cyan transition-colors">
+                  <a
+                    href="https://github.com/codewithmejeya/OnlineBloodBank"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-neon-purple hover:text-neon-cyan transition-colors"
+                  >
                     <Github size={16} />
-                  </button>
-                  <button className="text-neon-purple hover:text-neon-cyan transition-colors">
-                    <Globe size={16} />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
