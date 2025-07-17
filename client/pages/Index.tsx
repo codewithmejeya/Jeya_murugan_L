@@ -49,6 +49,7 @@ export default function Index() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: "smooth" });
+    setIsMobileMenuOpen(false); // Close mobile menu when navigating
   };
 
   return (
@@ -537,7 +538,7 @@ export default function Index() {
                     </p>
                     <ul className="text-foreground/70 text-sm space-y-2 leading-relaxed">
                       <li>
-                        ��� Built AI-driven e-commerce platform using ReactJS
+                        • Built AI-driven e-commerce platform using ReactJS
                       </li>
                       <li>• Designed user-friendly REST APIs with FastAPI</li>
                       <li>
