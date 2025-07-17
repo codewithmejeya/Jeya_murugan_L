@@ -416,7 +416,7 @@ export default function Index() {
             <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto text-center">
             <div className="space-y-6">
               <p className="text-lg text-foreground/80 leading-relaxed">
                 I'm a passionate Full Stack Developer with expertise in modern
@@ -431,7 +431,7 @@ export default function Index() {
                 and thoughtful design. I'm currently serving as City Leader at
                 U&I NGO, where I combine my technical skills with social impact.
               </p>
-              <div className="flex flex-wrap gap-4 mt-8">
+              <div className="flex flex-wrap gap-4 mt-8 justify-center">
                 <div className="glass-morphism px-4 py-2 rounded-lg border border-neon-cyan/30">
                   <span className="text-neon-cyan font-medium">Email:</span>
                   <span className="ml-2">lsjeyamurugan@gmail.com</span>
