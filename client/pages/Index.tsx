@@ -195,6 +195,15 @@ export default function Index() {
                   Contact
                 </button>
 
+                {/* Mobile Resume Download */}
+                <a
+                  href="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                  download="Jeya_Murugan_L_Resume.pdf"
+                  className="block w-full text-left text-neon-purple hover:text-neon-cyan transition-colors py-2 font-medium"
+                >
+                  Download Resume
+                </a>
+
                 {/* Mobile Social Links */}
                 <div className="flex space-x-6 pt-4 border-t border-neon-cyan/20">
                   <a
