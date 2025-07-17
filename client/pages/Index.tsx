@@ -520,7 +520,7 @@ export default function Index() {
             <div className="mt-8 text-center">
               <p className="text-foreground/60 text-sm">
                 <span className="text-neon-cyan">Languages:</span> HTML, CSS,
-                JavaScript, Python, SQL •
+                JavaScript, Python, SQL ��
                 <span className="text-neon-purple"> Frameworks:</span> React.js,
                 Django, FastAPI •<span className="text-neon-pink"> Tools:</span>{" "}
                 Git, GitHub, VS Code, Postman, AWS
@@ -664,14 +664,19 @@ export default function Index() {
             <div className="glass-morphism p-8 rounded-xl border border-neon-pink/20 hover-lift">
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-neon-pink/20 rounded-full flex items-center justify-center mr-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2F8578c135fbb048a6bdd996263cafc135?format=webp&width=800"
+                    alt="U&I NGO Logo"
+                    className="w-12 h-12 object-contain rounded-full"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = "none";
+                      (
+                        e.target as HTMLImageElement
+                      ).nextElementSibling!.style.display = "block";
+                    }}
+                  />
                   <Zap className="text-neon-pink hidden" size={32} />
                 </div>
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2F8578c135fbb048a6bdd996263cafc135?format=webp&width=800"
-                  alt="U&I NGO Logo"
-                  className="w-12 h-12 object-contain rounded-full"
-                  style={{ marginLeft: "-4px" }}
-                />
                 <div>
                   <h3 className="text-2xl font-bold text-neon-pink mb-2">
                     Board Member & Technical Head
@@ -940,7 +945,7 @@ export default function Index() {
                 <h3 className="text-2xl font-bold text-neon-cyan mb-6">
                   Let's Connect
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 gap-4">
                   {/* Email Container */}
                   <div className="glass-morphism p-4 rounded-lg border border-neon-cyan/20 hover-lift">
                     <div className="flex items-center space-x-4">
