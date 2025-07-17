@@ -10,6 +10,8 @@ import {
   Zap,
   Cpu,
   Terminal,
+  Menu,
+  X,
 } from "lucide-react";
 
 export default function Index() {
