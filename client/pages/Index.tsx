@@ -908,48 +908,6 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Data Analytics Dashboard */}
-            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-blue/20 hover-lift group">
-              <div className="relative h-48 bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 flex items-center justify-center">
-                <div className="text-6xl opacity-20">📊</div>
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-xs bg-neon-blue/20 text-neon-blue px-2 py-1 rounded">
-                    Analytics
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-neon-blue mb-2 group-hover:text-glow transition-all">
-                  Analytics Dashboard
-                </h3>
-                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
-                  Interactive data visualization dashboard with real-time
-                  analytics. Features dynamic charts, filtering options, and
-                  export capabilities for business intelligence.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
-                    React
-                  </span>
-                  <span className="text-xs bg-neon-blue/10 text-neon-blue px-2 py-1 rounded">
-                    D3.js
-                  </span>
-                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
-                    Python
-                  </span>
-                </div>
-                <div className="flex space-x-3">
-                  <button className="text-neon-blue hover:text-neon-purple transition-colors">
-                    <Github size={16} />
-                  </button>
-                  <button className="text-neon-blue hover:text-neon-purple transition-colors">
-                    <Globe size={16} />
-                  </button>
-                </div>
-              </div>
-            </div>
-
             {/* Open Source Contribution */}
             <div className="glass-morphism rounded-xl overflow-hidden border border-neon-pink/20 hover-lift group">
               <div className="relative h-48 bg-gradient-to-br from-neon-pink/20 to-neon-cyan/20 flex items-center justify-center">
