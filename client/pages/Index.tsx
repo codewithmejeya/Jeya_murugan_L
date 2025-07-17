@@ -521,7 +521,7 @@ export default function Index() {
                 { name: "VS Code", icon: "💻", color: "text-neon-green" },
                 { name: "FastAPI", icon: "⚡", color: "text-neon-purple" },
                 { name: "SQL Server", icon: "🗃️", color: "text-neon-pink" },
-                { name: "AWS", icon: "☁️", color: "text-neon-cyan" },
+                { name: "AWS", icon: "��️", color: "text-neon-cyan" },
                 { name: "Docker", icon: "🐳", color: "text-neon-blue" },
                 { name: "Linux", icon: "🐧", color: "text-neon-green" },
                 { name: "Postman", icon: "📮", color: "text-neon-orange" },
@@ -637,10 +637,154 @@ export default function Index() {
               </div>
             </div>
           </div>
+                </div>
+      </section>
+
+      {/* Leadership & Social Works Section */}
+      <section id="leadership" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+              Leadership & Social Works
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
+            <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
+              Driving positive change through leadership and community engagement
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* U&I NGO */}
+            <div className="glass-morphism p-8 rounded-xl border border-neon-cyan/20 hover-lift">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-neon-cyan/20 rounded-full flex items-center justify-center mr-6">
+                  <img
+                    src="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                    alt="U&I NGO Logo"
+                    className="w-12 h-12 object-contain rounded-full"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                      (e.target as HTMLImageElement).nextElementSibling!.style.display = 'block';
+                    }}
+                  />
+                  <Globe className="text-neon-cyan hidden" size={32} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-neon-cyan mb-2">
+                    City Leader & English Teacher
+                  </h3>
+                  <p className="text-foreground/80 text-lg">U&I NGO</p>
+                  <p className="text-neon-cyan/80 text-sm">
+                    June 2023 – Present
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-3 text-foreground/70 leading-relaxed">
+                <p className="flex items-start">
+                  <span className="text-neon-cyan mr-3 mt-1">•</span>
+                  Leading community initiatives and educational programs as City Leader, coordinating with local teams to maximize impact
+                </p>
+                <p className="flex items-start">
+                  <span className="text-neon-cyan mr-3 mt-1">•</span>
+                  Teaching English to underprivileged children, focusing on improving literacy and communication skills
+                </p>
+                <p className="flex items-start">
+                  <span className="text-neon-cyan mr-3 mt-1">•</span>
+                  Organizing volunteer drives and community outreach programs to address local social issues
+                </p>
+                <p className="flex items-start">
+                  <span className="text-neon-cyan mr-3 mt-1">•</span>
+                  Combining technical expertise with social responsibility to drive meaningful change in the community
+                </p>
+              </div>
+            </div>
+
+            {/* SGC */}
+            <div className="glass-morphism p-8 rounded-xl border border-neon-pink/20 hover-lift">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-neon-pink/20 rounded-full flex items-center justify-center mr-6">
+                  <img
+                    src="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                    alt="SGC Logo"
+                    className="w-12 h-12 object-contain rounded-full"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                      (e.target as HTMLImageElement).nextElementSibling!.style.display = 'block';
+                    }}
+                  />
+                  <Zap className="text-neon-pink hidden" size={32} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-neon-pink mb-2">
+                    Board Member & Technical Head
+                  </h3>
+                  <p className="text-foreground/80 text-lg">Student Government Council</p>
+                  <p className="text-neon-pink/80 text-sm">
+                    2021 – 2024
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-3 text-foreground/70 leading-relaxed">
+                <p className="flex items-start">
+                  <span className="text-neon-pink mr-3 mt-1">•</span>
+                  Served as Vice-President and Core Board Member, leading student initiatives and fostering collaborative environments
+                </p>
+                <p className="flex items-start">
+                  <span className="text-neon-pink mr-3 mt-1">•</span>
+                  Headed technical operations and digital initiatives for student body programs and events
+                </p>
+                <p className="flex items-start">
+                  <span className="text-neon-pink mr-3 mt-1">•</span>
+                  Developed leadership and organizational skills while representing student interests and concerns
+                </p>
+                <p className="flex items-start">
+                  <span className="text-neon-pink mr-3 mt-1">•</span>
+                  Coordinated with faculty and administration to implement student-centric policies and improvements
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Impact Statistics */}
+          <div className="mt-16 grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-neon-cyan/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-neon-cyan">500+</span>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground/80 mb-2">
+                Students Impacted
+              </h4>
+              <p className="text-sm text-foreground/60">
+                Through educational programs and leadership initiatives
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-neon-pink/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-neon-pink">3+</span>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground/80 mb-2">
+                Years of Leadership
+              </h4>
+              <p className="text-sm text-foreground/60">
+                Continuous commitment to community service and development
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-neon-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-neon-purple">∞</span>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground/80 mb-2">
+                Social Impact
+              </h4>
+              <p className="text-sm text-foreground/60">
+                Creating lasting positive change in communities
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Projects Section */>
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
