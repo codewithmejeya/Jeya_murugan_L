@@ -614,7 +614,7 @@ export default function Index() {
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-neon-cyan/20 rounded-full flex items-center justify-center mr-6">
                   <img
-                    src="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2F8578c135fbb048a6bdd996263cafc135?format=webp&width=800"
                     alt="U&I NGO Logo"
                     className="w-12 h-12 object-contain rounded-full"
                     onError={(e) => {
