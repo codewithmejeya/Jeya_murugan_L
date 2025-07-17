@@ -811,44 +811,50 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* AI E-commerce Platform */}
+            {/* Virtual Mouse for Physically Challenged Persons */}
             <div className="glass-morphism rounded-xl overflow-hidden border border-neon-cyan/20 hover-lift group">
               <div className="relative h-48 bg-gradient-to-br from-neon-cyan/20 to-neon-blue/20 flex items-center justify-center">
-                <div className="text-6xl opacity-20">🛍️</div>
+                <div className="text-6xl opacity-20">👁️</div>
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
                   <span className="text-xs bg-neon-cyan/20 text-neon-cyan px-2 py-1 rounded">
-                    AI-Powered
+                    Accessibility
                   </span>
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-neon-cyan mb-2 group-hover:text-glow transition-all">
-                  AI E-commerce Platform
+                  Virtual Mouse for Physically Challenged
                 </h3>
                 <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
-                  Built a comprehensive e-commerce platform with AI-driven
-                  recommendations using ReactJS and FastAPI. Features include
-                  real-time analytics and intelligent product suggestions.
+                  Innovative accessibility tool that enables computer mouse
+                  control through eye movement tracking and hand gesture
+                  recognition, designed specifically for individuals with
+                  physical disabilities.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
-                    React
-                  </span>
                   <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
-                    FastAPI
+                    Python
+                  </span>
+                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
+                    OpenCV
                   </span>
                   <span className="text-xs bg-neon-green/10 text-neon-green px-2 py-1 rounded">
-                    AI/ML
+                    MediaPipe
+                  </span>
+                  <span className="text-xs bg-neon-orange/10 text-neon-orange px-2 py-1 rounded">
+                    PyAutoGUI
                   </span>
                 </div>
                 <div className="flex space-x-3">
-                  <button className="text-neon-cyan hover:text-neon-purple transition-colors">
+                  <a
+                    href="https://github.com/codewithmejeya/VirtualMouseForPhysicallyChallengedPerson"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-neon-cyan hover:text-neon-purple transition-colors"
+                  >
                     <Github size={16} />
-                  </button>
-                  <button className="text-neon-cyan hover:text-neon-purple transition-colors">
-                    <Globe size={16} />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
