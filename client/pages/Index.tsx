@@ -945,65 +945,80 @@ export default function Index() {
                 <h3 className="text-2xl font-bold text-neon-cyan mb-6">
                   Let's Connect
                 </h3>
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-neon-cyan/20 rounded-full flex items-center justify-center">
-                      <Mail className="text-neon-cyan" size={20} />
-                    </div>
-                    <div>
-                      <p className="text-foreground/60 text-sm">Email</p>
-                      <a
-                        href="mailto:lsjeyamurugan@gmail.com"
-                        className="text-foreground hover:text-neon-cyan transition-colors"
-                      >
-                        lsjeyamurugan@gmail.com
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-neon-purple/20 rounded-full flex items-center justify-center">
-                      <span className="text-neon-purple text-sm">📱</span>
-                    </div>
-                    <div>
-                      <p className="text-foreground/60 text-sm">Phone</p>
-                      <a
-                        href="tel:+916374398086"
-                        className="text-foreground hover:text-neon-purple transition-colors"
-                      >
-                        +91 6374398086
-                      </a>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Email Container */}
+                  <div className="glass-morphism p-4 rounded-lg border border-neon-cyan/20 hover-lift">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-neon-cyan/20 rounded-full flex items-center justify-center">
+                        <Mail className="text-neon-cyan" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-foreground/60 text-sm">Email</p>
+                        <a
+                          href="mailto:lsjeyamurugan@gmail.com"
+                          className="text-foreground hover:text-neon-cyan transition-colors"
+                        >
+                          lsjeyamurugan@gmail.com
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-neon-pink/20 rounded-full flex items-center justify-center">
-                      <Linkedin className="text-neon-pink" size={20} />
-                    </div>
-                    <div>
-                      <p className="text-foreground/60 text-sm">LinkedIn</p>
-                      <a
-                        href="https://linkedin.com/in/jeyamuruganl"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-foreground hover:text-neon-pink transition-colors"
-                      >
-                        linkedin.com/in/jeyamuruganl
-                      </a>
+
+                  {/* Phone Container */}
+                  <div className="glass-morphism p-4 rounded-lg border border-neon-purple/20 hover-lift">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-neon-purple/20 rounded-full flex items-center justify-center">
+                        <span className="text-neon-purple text-sm">📱</span>
+                      </div>
+                      <div>
+                        <p className="text-foreground/60 text-sm">Phone</p>
+                        <a
+                          href="tel:+916374398086"
+                          className="text-foreground hover:text-neon-purple transition-colors"
+                        >
+                          +91 6374398086
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-neon-green/20 rounded-full flex items-center justify-center">
-                      <Github className="text-neon-green" size={20} />
+
+                  {/* LinkedIn Container */}
+                  <div className="glass-morphism p-4 rounded-lg border border-neon-pink/20 hover-lift">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-neon-pink/20 rounded-full flex items-center justify-center">
+                        <Linkedin className="text-neon-pink" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-foreground/60 text-sm">LinkedIn</p>
+                        <a
+                          href="https://linkedin.com/in/jeyamuruganl"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-foreground hover:text-neon-pink transition-colors"
+                        >
+                          linkedin.com/in/jeyamuruganl
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-foreground/60 text-sm">GitHub</p>
-                      <a
-                        href="https://github.com/codewithmejeya"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-foreground hover:text-neon-green transition-colors"
-                      >
-                        github.com/codewithmejeya
-                      </a>
+                  </div>
+
+                  {/* GitHub Container */}
+                  <div className="glass-morphism p-4 rounded-lg border border-neon-green/20 hover-lift">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-neon-green/20 rounded-full flex items-center justify-center">
+                        <Github className="text-neon-green" size={20} />
+                      </div>
+                      <div>
+                        <p className="text-foreground/60 text-sm">GitHub</p>
+                        <a
+                          href="https://github.com/codewithmejeya"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-foreground hover:text-neon-green transition-colors"
+                        >
+                          github.com/codewithmejeya
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
