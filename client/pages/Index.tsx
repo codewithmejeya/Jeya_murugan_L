@@ -136,6 +136,12 @@ export default function Index() {
                 Experience
               </button>
               <button
+                onClick={() => scrollToSection("leadership")}
+                className="text-foreground/80 hover:text-neon-cyan transition-colors"
+              >
+                Leadership
+              </button>
+              <button
                 onClick={() => scrollToSection("projects")}
                 className="text-foreground/80 hover:text-neon-cyan transition-colors"
               >
