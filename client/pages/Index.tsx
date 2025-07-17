@@ -77,6 +77,8 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold gradient-text">JM</div>
+
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button
                 onClick={() => scrollToSection("hero")}
@@ -115,7 +117,9 @@ export default function Index() {
                 Contact
               </button>
             </div>
-            <div className="flex space-x-4">
+
+            {/* Desktop Social Links */}
+            <div className="hidden md:flex space-x-4">
               <a
                 href="https://github.com/codewithmejeya"
                 target="_blank"
@@ -133,7 +137,85 @@ export default function Index() {
                 <Linkedin size={20} />
               </a>
             </div>
+
+            {/* Mobile Hamburger Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-foreground/80 hover:text-neon-cyan transition-colors"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden absolute top-full left-0 right-0 bg-dark-default/95 backdrop-blur-lg border-b border-neon-cyan/20">
+              <div className="px-4 py-6 space-y-4">
+                <button
+                  onClick={() => scrollToSection("hero")}
+                  className="block w-full text-left text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                >
+                  Home
+                </button>
+                <button
+                  onClick={() => scrollToSection("about")}
+                  className="block w-full text-left text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                >
+                  About
+                </button>
+                <button
+                  onClick={() => scrollToSection("skills")}
+                  className="block w-full text-left text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                >
+                  Skills
+                </button>
+                <button
+                  onClick={() => scrollToSection("experience")}
+                  className="block w-full text-left text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                >
+                  Experience
+                </button>
+                <button
+                  onClick={() => scrollToSection("projects")}
+                  className="block w-full text-left text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                >
+                  Projects
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="block w-full text-left text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                >
+                  Contact
+                </button>
+
+                {/* Mobile Social Links */}
+                <div className="flex space-x-6 pt-4 border-t border-neon-cyan/20">
+                  <a
+                    href="https://github.com/codewithmejeya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-neon-cyan transition-colors"
+                  >
+                    <Github size={20} />
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/jeyamuruganl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-neon-cyan transition-colors"
+                  >
+                    <Linkedin size={20} />
+                  </a>
+                  <a
+                    href="mailto:lsjeyamurugan@gmail.com"
+                    className="text-foreground/80 hover:text-neon-cyan transition-colors"
+                  >
+                    <Mail size={20} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
