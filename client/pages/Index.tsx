@@ -682,7 +682,7 @@ export default function Index() {
                     Board Member & Technical Head
                   </h3>
                   <p className="text-foreground/80 text-lg">
-                    Student Government Council
+                    Student Guidance Cell
                   </p>
                   <p className="text-neon-pink/80 text-sm">2021 – 2024</p>
                 </div>
