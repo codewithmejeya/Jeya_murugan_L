@@ -907,48 +907,6 @@ export default function Index() {
                 </div>
               </div>
             </div>
-
-            {/* Open Source Contribution */}
-            <div className="glass-morphism rounded-xl overflow-hidden border border-neon-pink/20 hover-lift group">
-              <div className="relative h-48 bg-gradient-to-br from-neon-pink/20 to-neon-cyan/20 flex items-center justify-center">
-                <div className="text-6xl opacity-20">🔧</div>
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-default/80 to-transparent"></div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-xs bg-neon-pink/20 text-neon-pink px-2 py-1 rounded">
-                    Open Source
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-neon-pink mb-2 group-hover:text-glow transition-all">
-                  Development Tools
-                </h3>
-                <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
-                  Collection of developer tools and utilities for improved
-                  productivity. Includes code generators, API testing tools, and
-                  development environment setup scripts.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-neon-purple/10 text-neon-purple px-2 py-1 rounded">
-                    Python
-                  </span>
-                  <span className="text-xs bg-neon-cyan/10 text-neon-cyan px-2 py-1 rounded">
-                    CLI
-                  </span>
-                  <span className="text-xs bg-neon-pink/10 text-neon-pink px-2 py-1 rounded">
-                    Tools
-                  </span>
-                </div>
-                <div className="flex space-x-3">
-                  <button className="text-neon-pink hover:text-neon-purple transition-colors">
-                    <Github size={16} />
-                  </button>
-                  <button className="text-neon-pink hover:text-neon-purple transition-colors">
-                    <Globe size={16} />
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Call to Action */}
