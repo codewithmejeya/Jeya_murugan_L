@@ -664,19 +664,14 @@ export default function Index() {
             <div className="glass-morphism p-8 rounded-xl border border-neon-pink/20 hover-lift">
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-neon-pink/20 rounded-full flex items-center justify-center mr-6">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2F3a1d6c319d4d43de851f0b249f924085?format=webp&width=800"
-                    alt="SGC Logo"
-                    className="w-12 h-12 object-contain rounded-full"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = "none";
-                      (
-                        e.target as HTMLImageElement
-                      ).nextElementSibling!.style.display = "block";
-                    }}
-                  />
                   <Zap className="text-neon-pink hidden" size={32} />
                 </div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2F8578c135fbb048a6bdd996263cafc135?format=webp&width=800"
+                  alt="U&I NGO Logo"
+                  className="w-12 h-12 object-contain rounded-full"
+                  style={{ marginLeft: "-4px" }}
+                />
                 <div>
                   <h3 className="text-2xl font-bold text-neon-pink mb-2">
                     Board Member & Technical Head
