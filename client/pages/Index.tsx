@@ -220,6 +220,12 @@ export default function Index() {
                   Experience
                 </button>
                 <button
+                  onClick={() => scrollToSection("leadership")}
+                  className="block w-full text-left text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                >
+                  Leadership
+                </button>
+                <button
                   onClick={() => scrollToSection("projects")}
                   className="block w-full text-left text-foreground/80 hover:text-neon-cyan transition-colors py-2"
                 >
