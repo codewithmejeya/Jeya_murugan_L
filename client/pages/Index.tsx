@@ -637,7 +637,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-                </div>
+        </div>
       </section>
 
       {/* Leadership & Social Works Section */}
@@ -649,7 +649,8 @@ export default function Index() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
             <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
-              Driving positive change through leadership and community engagement
+              Driving positive change through leadership and community
+              engagement
             </p>
           </div>
 
@@ -663,8 +664,10 @@ export default function Index() {
                     alt="U&I NGO Logo"
                     className="w-12 h-12 object-contain rounded-full"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
-                      (e.target as HTMLImageElement).nextElementSibling!.style.display = 'block';
+                      (e.target as HTMLImageElement).style.display = "none";
+                      (
+                        e.target as HTMLImageElement
+                      ).nextElementSibling!.style.display = "block";
                     }}
                   />
                   <Globe className="text-neon-cyan hidden" size={32} />
@@ -682,19 +685,23 @@ export default function Index() {
               <div className="space-y-3 text-foreground/70 leading-relaxed">
                 <p className="flex items-start">
                   <span className="text-neon-cyan mr-3 mt-1">•</span>
-                  Leading community initiatives and educational programs as City Leader, coordinating with local teams to maximize impact
+                  Leading community initiatives and educational programs as City
+                  Leader, coordinating with local teams to maximize impact
                 </p>
                 <p className="flex items-start">
                   <span className="text-neon-cyan mr-3 mt-1">•</span>
-                  Teaching English to underprivileged children, focusing on improving literacy and communication skills
+                  Teaching English to underprivileged children, focusing on
+                  improving literacy and communication skills
                 </p>
                 <p className="flex items-start">
                   <span className="text-neon-cyan mr-3 mt-1">•</span>
-                  Organizing volunteer drives and community outreach programs to address local social issues
+                  Organizing volunteer drives and community outreach programs to
+                  address local social issues
                 </p>
                 <p className="flex items-start">
                   <span className="text-neon-cyan mr-3 mt-1">•</span>
-                  Combining technical expertise with social responsibility to drive meaningful change in the community
+                  Combining technical expertise with social responsibility to
+                  drive meaningful change in the community
                 </p>
               </div>
             </div>
@@ -708,8 +715,10 @@ export default function Index() {
                     alt="SGC Logo"
                     className="w-12 h-12 object-contain rounded-full"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
-                      (e.target as HTMLImageElement).nextElementSibling!.style.display = 'block';
+                      (e.target as HTMLImageElement).style.display = "none";
+                      (
+                        e.target as HTMLImageElement
+                      ).nextElementSibling!.style.display = "block";
                     }}
                   />
                   <Zap className="text-neon-pink hidden" size={32} />
@@ -718,28 +727,32 @@ export default function Index() {
                   <h3 className="text-2xl font-bold text-neon-pink mb-2">
                     Board Member & Technical Head
                   </h3>
-                  <p className="text-foreground/80 text-lg">Student Government Council</p>
-                  <p className="text-neon-pink/80 text-sm">
-                    2021 – 2024
+                  <p className="text-foreground/80 text-lg">
+                    Student Government Council
                   </p>
+                  <p className="text-neon-pink/80 text-sm">2021 – 2024</p>
                 </div>
               </div>
               <div className="space-y-3 text-foreground/70 leading-relaxed">
                 <p className="flex items-start">
                   <span className="text-neon-pink mr-3 mt-1">•</span>
-                  Served as Vice-President and Core Board Member, leading student initiatives and fostering collaborative environments
+                  Served as Vice-President and Core Board Member, leading
+                  student initiatives and fostering collaborative environments
                 </p>
                 <p className="flex items-start">
                   <span className="text-neon-pink mr-3 mt-1">•</span>
-                  Headed technical operations and digital initiatives for student body programs and events
+                  Headed technical operations and digital initiatives for
+                  student body programs and events
                 </p>
                 <p className="flex items-start">
                   <span className="text-neon-pink mr-3 mt-1">•</span>
-                  Developed leadership and organizational skills while representing student interests and concerns
+                  Developed leadership and organizational skills while
+                  representing student interests and concerns
                 </p>
                 <p className="flex items-start">
                   <span className="text-neon-pink mr-3 mt-1">•</span>
-                  Coordinated with faculty and administration to implement student-centric policies and improvements
+                  Coordinated with faculty and administration to implement
+                  student-centric policies and improvements
                 </p>
               </div>
             </div>
@@ -784,7 +797,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Projects Section */>
+      {/* Projects Section */}
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
