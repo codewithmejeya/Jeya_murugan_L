@@ -14,6 +14,37 @@ import {
   X,
 } from "lucide-react";
 
+// Animated Role Component
+const AnimatedRole = ({
+  text,
+  color,
+  delay,
+}: {
+  text: string;
+  color: string;
+  delay: number;
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [delay]);
+
+  return (
+    <div
+      className={`text-2xl md:text-3xl lg:text-4xl font-bold transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+      } ${color} text-glow`}
+    >
+      {text}
+    </div>
+  );
+};
+
 export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
