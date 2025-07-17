@@ -493,144 +493,73 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {/* Frontend Skills */}
-            <div className="glass-morphism p-8 rounded-xl border border-neon-cyan/20 hover-lift">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-neon-cyan/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Globe className="text-neon-cyan" size={32} />
-                </div>
-                <h3 className="text-2xl font-bold text-neon-cyan mb-2">
-                  Frontend
-                </h3>
-              </div>
-              <div className="space-y-4">
-                {[
-                  { skill: "React.js", level: 90 },
-                  { skill: "JavaScript", level: 85 },
-                  { skill: "TypeScript", level: 80 },
-                  { skill: "HTML/CSS", level: 95 },
-                  { skill: "Tailwind CSS", level: 90 },
-                ].map((item, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-foreground/80">{item.skill}</span>
-                      <span className="text-neon-cyan">{item.level}%</span>
+          {/* Single Container for All Technologies */}
+          <div className="glass-morphism p-8 rounded-xl border border-neon-cyan/20">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6">
+              {[
+                { name: "Python", icon: "🐍", color: "text-neon-cyan" },
+                { name: "React", icon: "⚛️", color: "text-neon-blue" },
+                { name: "Django", icon: "🎸", color: "text-neon-green" },
+                { name: "JavaScript", icon: "📜", color: "text-neon-orange" },
+                { name: "HTML", icon: "🌐", color: "text-neon-pink" },
+                { name: "CSS", icon: "🎨", color: "text-neon-purple" },
+                { name: "MySQL", icon: "🗄️", color: "text-neon-cyan" },
+                { name: "Git", icon: "📦", color: "text-neon-orange" },
+                { name: "GitHub", icon: "🐱", color: "text-neon-blue" },
+                { name: "VS Code", icon: "💻", color: "text-neon-green" },
+                { name: "FastAPI", icon: "⚡", color: "text-neon-purple" },
+                { name: "SQL Server", icon: "🗃️", color: "text-neon-pink" },
+                { name: "AWS", icon: "☁️", color: "text-neon-cyan" },
+                { name: "Docker", icon: "🐳", color: "text-neon-blue" },
+                { name: "Linux", icon: "🐧", color: "text-neon-green" },
+                { name: "Postman", icon: "📮", color: "text-neon-orange" },
+                { name: "OpenCV", icon: "👁️", color: "text-neon-purple" },
+                { name: "MediaPipe", icon: "🎥", color: "text-neon-pink" },
+                { name: "Bootstrap", icon: "🥾", color: "text-neon-cyan" },
+                { name: "Tailwind", icon: "💨", color: "text-neon-blue" },
+              ].map((tech, index) => (
+                <div
+                  key={index}
+                  className="group relative"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="glass-morphism p-4 rounded-xl border border-neon-cyan/10 text-center hover-lift group cursor-pointer transition-all duration-300 hover:border-neon-cyan/50 animate-fade-in">
+                    {/* Technology Icon */}
+                    <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                      {tech.icon}
                     </div>
-                    <div className="w-full bg-dark-lighter rounded-full h-2 overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-neon-cyan to-neon-blue rounded-full transition-all duration-1000 animate-glow"
-                        style={{
-                          width: `${item.level}%`,
-                          animationDelay: `${index * 0.2}s`,
-                        }}
-                      ></div>
+
+                    {/* Technology Name */}
+                    <div
+                      className={`text-sm font-medium transition-colors duration-300 ${tech.color} group-hover:text-glow`}
+                    >
+                      {tech.name}
                     </div>
+
+                    {/* Hover Effect Background */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/5 to-neon-purple/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                ))}
-              </div>
+
+                  {/* Floating Animation */}
+                  <div className="absolute inset-0 pointer-events-none">
+                    <div
+                      className={`w-2 h-2 ${tech.color.replace("text-", "bg-")} rounded-full absolute -top-1 -right-1 opacity-0 group-hover:opacity-100 animate-pulse`}
+                    ></div>
+                  </div>
+                </div>
+              ))}
             </div>
 
-            {/* Backend Skills */}
-            <div className="glass-morphism p-8 rounded-xl border border-neon-purple/20 hover-lift">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-neon-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Database className="text-neon-purple" size={32} />
-                </div>
-                <h3 className="text-2xl font-bold text-neon-purple mb-2">
-                  Backend
-                </h3>
-              </div>
-              <div className="space-y-4">
-                {[
-                  { skill: "Python", level: 95 },
-                  { skill: "Django", level: 85 },
-                  { skill: "FastAPI", level: 80 },
-                  { skill: "SQL Server", level: 75 },
-                  { skill: "REST APIs", level: 90 },
-                ].map((item, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-foreground/80">{item.skill}</span>
-                      <span className="text-neon-purple">{item.level}%</span>
-                    </div>
-                    <div className="w-full bg-dark-lighter rounded-full h-2 overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-neon-purple to-neon-pink rounded-full transition-all duration-1000 animate-glow"
-                        style={{
-                          width: `${item.level}%`,
-                          animationDelay: `${index * 0.2}s`,
-                        }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            {/* Additional Skills Text */}
+            <div className="mt-8 text-center">
+              <p className="text-foreground/60 text-sm">
+                <span className="text-neon-cyan">Languages:</span> HTML, CSS,
+                JavaScript, Python, SQL •
+                <span className="text-neon-purple"> Frameworks:</span> React.js,
+                Django, FastAPI •<span className="text-neon-pink"> Tools:</span>{" "}
+                Git, GitHub, VS Code, Postman, AWS
+              </p>
             </div>
-
-            {/* Tools & Technologies */}
-            <div className="glass-morphism p-8 rounded-xl border border-neon-green/20 hover-lift">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-neon-green/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Zap className="text-neon-green" size={32} />
-                </div>
-                <h3 className="text-2xl font-bold text-neon-green mb-2">
-                  Tools & Tech
-                </h3>
-              </div>
-              <div className="space-y-4">
-                {[
-                  { skill: "Git/GitHub", level: 90 },
-                  { skill: "Docker", level: 70 },
-                  { skill: "AWS", level: 65 },
-                  { skill: "Linux", level: 80 },
-                  { skill: "CI/CD", level: 75 },
-                ].map((item, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-foreground/80">{item.skill}</span>
-                      <span className="text-neon-green">{item.level}%</span>
-                    </div>
-                    <div className="w-full bg-dark-lighter rounded-full h-2 overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-neon-green to-neon-orange rounded-full transition-all duration-1000 animate-glow"
-                        style={{
-                          width: `${item.level}%`,
-                          animationDelay: `${index * 0.2}s`,
-                        }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Technology Stack Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {[
-              "Python",
-              "React",
-              "Django",
-              "FastAPI",
-              "JavaScript",
-              "TypeScript",
-              "SQL",
-              "Git",
-              "AWS",
-              "Docker",
-              "Linux",
-              "CSS3",
-            ].map((tech, index) => (
-              <div
-                key={index}
-                className="glass-morphism p-4 rounded-lg border border-neon-cyan/10 text-center hover-lift group cursor-pointer"
-              >
-                <div className="text-lg font-medium text-foreground/80 group-hover:text-neon-cyan transition-colors">
-                  {tech}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
