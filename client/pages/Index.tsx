@@ -254,47 +254,87 @@ export default function Index() {
         </div>
 
         <div
-          className={`text-center z-10 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          className={`w-full z-10 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <div className="mb-6">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4">
-              <span className="block text-glow text-neon-cyan">JEYA</span>
-              <span className="block gradient-text">MURUGAN L</span>
-            </h1>
-            <div className="text-xl md:text-2xl text-foreground/80 mb-8">
-              <span className="block">Full Stack Developer</span>
-              <span className="block text-neon-purple">Software Engineer</span>
-              <span className="block text-neon-pink">Python Developer</span>
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+            {/* Left Side - Name */}
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+                <span className="block text-glow text-neon-cyan">JEYA</span>
+                <span className="block gradient-text">MURUGAN L</span>
+              </h1>
+
+              <p className="text-lg md:text-xl text-foreground/70 mb-8 leading-relaxed">
+                Crafting innovative digital experiences with cutting-edge
+                technology. Specialized in full-stack development, AI
+                integration, and automation solutions.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-8">
+                <button
+                  onClick={() => scrollToSection("projects")}
+                  className="glass-morphism px-8 py-3 rounded-lg border border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-dark-darker transition-all duration-300 hover-lift"
+                >
+                  View My Work
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="bg-neon-cyan text-dark-darker px-8 py-3 rounded-lg hover:bg-neon-purple transition-all duration-300 hover-lift font-medium"
+                >
+                  Get In Touch
+                </button>
+                <a
+                  href="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                  download="Jeya_Murugan_L_Resume.pdf"
+                  className="glass-morphism px-8 py-3 rounded-lg border border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-dark-darker transition-all duration-300 hover-lift font-medium"
+                >
+                  Download Resume
+                </a>
+              </div>
+            </div>
+
+            {/* Right Side - Animated Roles */}
+            <div className="text-center md:text-right">
+              <div className="relative h-64 md:h-80 flex items-center justify-center md:justify-end">
+                <div className="space-y-4">
+                  <AnimatedRole
+                    text="Full Stack Developer"
+                    color="text-neon-cyan"
+                    delay={0}
+                  />
+                  <AnimatedRole
+                    text="Software Engineer"
+                    color="text-neon-purple"
+                    delay={1000}
+                  />
+                  <AnimatedRole
+                    text="Python Developer"
+                    color="text-neon-pink"
+                    delay={2000}
+                  />
+                  <AnimatedRole
+                    text="Frontend Developer"
+                    color="text-neon-green"
+                    delay={3000}
+                  />
+                  <AnimatedRole
+                    text="Automation Engineer"
+                    color="text-neon-orange"
+                    delay={4000}
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Crafting innovative digital experiences with cutting-edge
-            technology. Specialized in full-stack development, AI integration,
-            and automation solutions.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="text-center mt-12">
             <button
-              onClick={() => scrollToSection("projects")}
-              className="glass-morphism px-8 py-3 rounded-lg border border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-dark-darker transition-all duration-300 hover-lift"
+              onClick={() => scrollToSection("about")}
+              className="animate-bounce text-neon-cyan hover:text-neon-purple transition-colors"
             >
-              View My Work
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="bg-neon-cyan text-dark-darker px-8 py-3 rounded-lg hover:bg-neon-purple transition-all duration-300 hover-lift font-medium"
-            >
-              Get In Touch
+              <ChevronDown size={32} />
             </button>
           </div>
-
-          <button
-            onClick={() => scrollToSection("about")}
-            className="animate-bounce text-neon-cyan hover:text-neon-purple transition-colors"
-          >
-            <ChevronDown size={32} />
-          </button>
         </div>
 
         {/* Floating Icons */}
