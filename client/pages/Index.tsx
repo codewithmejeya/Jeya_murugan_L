@@ -462,15 +462,164 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            Professional Experience
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
-          <p className="text-foreground/60">
-            Experience timeline will be implemented next...
-          </p>
+      {/* Experience Section */}
+      <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+              Professional Experience
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-8"></div>
+            <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
+              My journey in software development and leadership
+            </p>
+          </div>
+
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-neon-cyan via-neon-purple to-neon-pink"></div>
+
+            {/* Experience Items */}
+            <div className="space-y-16">
+              {/* Current Role - U&I NGO */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <div className="glass-morphism p-6 rounded-xl border border-neon-cyan/20 hover-lift">
+                    <div className="flex items-center justify-end mb-4">
+                      <div className="text-right">
+                        <h3 className="text-xl font-bold text-neon-cyan">
+                          City Leader
+                        </h3>
+                        <p className="text-foreground/80">U&I NGO</p>
+                      </div>
+                      <div className="ml-4 w-12 h-12 bg-neon-cyan/20 rounded-full flex items-center justify-center">
+                        <Globe className="text-neon-cyan" size={24} />
+                      </div>
+                    </div>
+                    <p className="text-sm text-neon-cyan/80 mb-3">
+                      June 2023 – Present
+                    </p>
+                    <p className="text-foreground/70 text-sm leading-relaxed">
+                      Leading community initiatives and social impact programs.
+                      Combining technical expertise with social responsibility
+                      to drive meaningful change in the community.
+                    </p>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-neon-cyan rounded-full animate-pulse"></div>
+                <div className="w-1/2 pl-8"></div>
+              </div>
+
+              {/* Fullstack Developer Intern */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-neon-purple rounded-full animate-pulse"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="glass-morphism p-6 rounded-xl border border-neon-purple/20 hover-lift">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-neon-purple/20 rounded-full flex items-center justify-center mr-4">
+                        <Code className="text-neon-purple" size={24} />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-neon-purple">
+                          Fullstack Developer Intern
+                        </h3>
+                        <p className="text-foreground/80">
+                          Alphabit Technologies
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-sm text-neon-purple/80 mb-3">
+                      Jan 2024 – Mar 2024
+                    </p>
+                    <ul className="text-foreground/70 text-sm space-y-2 leading-relaxed">
+                      <li>
+                        • Built AI-driven e-commerce platform using ReactJS
+                      </li>
+                      <li>• Designed user-friendly REST APIs with FastAPI</li>
+                      <li>
+                        • Integrated SQL Server for backend analytics and data
+                        management
+                      </li>
+                      <li>
+                        • Collaborated with cross-functional teams to deliver
+                        high-quality solutions
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* SGC Leadership */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <div className="glass-morphism p-6 rounded-xl border border-neon-pink/20 hover-lift">
+                    <div className="flex items-center justify-end mb-4">
+                      <div className="text-right">
+                        <h3 className="text-xl font-bold text-neon-pink">
+                          SGC Core Member & Vice-President
+                        </h3>
+                        <p className="text-foreground/80">
+                          Student Government Council
+                        </p>
+                      </div>
+                      <div className="ml-4 w-12 h-12 bg-neon-pink/20 rounded-full flex items-center justify-center">
+                        <Zap className="text-neon-pink" size={24} />
+                      </div>
+                    </div>
+                    <p className="text-sm text-neon-pink/80 mb-3">
+                      2021 – 2024
+                    </p>
+                    <p className="text-foreground/70 text-sm leading-relaxed">
+                      Served as Vice-President and Core Member, leading student
+                      initiatives and fostering collaborative environments.
+                      Developed leadership and organizational skills while
+                      representing student interests.
+                    </p>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-neon-pink rounded-full animate-pulse"></div>
+                <div className="w-1/2 pl-8"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Achievements */}
+          <div className="mt-20 grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-neon-cyan/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-neon-cyan">3+</span>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground/80 mb-2">
+                Years Experience
+              </h4>
+              <p className="text-sm text-foreground/60">
+                In software development and leadership roles
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-neon-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-neon-purple">10+</span>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground/80 mb-2">
+                Projects Completed
+              </h4>
+              <p className="text-sm text-foreground/60">
+                Full-stack applications and web solutions
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-neon-pink/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-neon-pink">∞</span>
+              </div>
+              <h4 className="text-lg font-semibold text-foreground/80 mb-2">
+                Learning Journey
+              </h4>
+              <p className="text-sm text-foreground/60">
+                Continuous growth and skill development
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
