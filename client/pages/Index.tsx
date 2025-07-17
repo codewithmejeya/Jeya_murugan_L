@@ -17,6 +17,7 @@ import {
 export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -536,7 +537,7 @@ export default function Index() {
                     </p>
                     <ul className="text-foreground/70 text-sm space-y-2 leading-relaxed">
                       <li>
-                        • Built AI-driven e-commerce platform using ReactJS
+                        ��� Built AI-driven e-commerce platform using ReactJS
                       </li>
                       <li>• Designed user-friendly REST APIs with FastAPI</li>
                       <li>
