@@ -442,44 +442,6 @@ export default function Index() {
                 </div>
               </div>
             </div>
-
-            <div className="relative">
-              <div className="glass-morphism p-8 rounded-xl border border-neon-cyan/20 hover-lift">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-neon-cyan rounded-full animate-pulse"></div>
-                    <span className="text-foreground/80">
-                      Software Engineer
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-3 h-3 bg-neon-purple rounded-full animate-pulse"
-                      style={{ animationDelay: "0.5s" }}
-                    ></div>
-                    <span className="text-foreground/80">
-                      Full Stack Developer
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-3 h-3 bg-neon-pink rounded-full animate-pulse"
-                      style={{ animationDelay: "1s" }}
-                    ></div>
-                    <span className="text-foreground/80">Python Developer</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-3 h-3 bg-neon-green rounded-full animate-pulse"
-                      style={{ animationDelay: "1.5s" }}
-                    ></div>
-                    <span className="text-foreground/80">
-                      Automation Engineer
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
