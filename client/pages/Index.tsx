@@ -250,6 +250,8 @@ export default function Index() {
                 <a
                   href="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
                   download="Jeya_Murugan_L_Resume.pdf"
+                  target="_self"
+                  rel="noopener"
                   className="block w-full text-left text-neon-purple hover:text-neon-cyan transition-colors py-2 font-medium"
                 >
                   Download Resume
