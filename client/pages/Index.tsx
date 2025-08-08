@@ -164,7 +164,7 @@ export default function Index() {
             {/* Desktop Social Links & Resume */}
             <div className="hidden md:flex items-center space-x-4">
               <a
-                href="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                href="https://drive.google.com/uc?export=download&id=1hTgcMN4UakCBk-m332vN0Y4937qKoRnL"
                 download="Jeya_Murugan_L_Resume.pdf"
                 target="_self"
                 rel="noopener"
@@ -248,7 +248,7 @@ export default function Index() {
 
                 {/* Mobile Resume Download */}
                 <a
-                  href="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                  href="https://drive.google.com/uc?export=download&id=1hTgcMN4UakCBk-m332vN0Y4937qKoRnL"
                   download="Jeya_Murugan_L_Resume.pdf"
                   target="_self"
                   rel="noopener"
@@ -359,7 +359,7 @@ export default function Index() {
                 Get In Touch
               </button>
               <a
-                href="https://cdn.builder.io/o/assets%2F67acf1404ad7489e8bc3d8c5720ac6e8%2Fb6bf0482c89940cab0e3989db002afd9?alt=media&token=bab73aa1-bb38-4417-b4ec-46fa7758009f&apiKey=67acf1404ad7489e8bc3d8c5720ac6e8"
+                href="https://drive.google.com/uc?export=download&id=1hTgcMN4UakCBk-m332vN0Y4937qKoRnL"
                 download="Jeya_Murugan_L_Resume.pdf"
                 target="_self"
                 rel="noopener"
